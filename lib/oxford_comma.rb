@@ -1,7 +1,7 @@
 def oxford_comma(array)
-  case array.split
-  when == 1
-    return array
+  case array.length
+  when 1
+    return "#{array[0]}"
   end
 end
 
