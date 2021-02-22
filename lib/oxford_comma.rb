@@ -1,15 +1,14 @@
 def oxford_comma(array)
-  if array.length == 2
-    array.join(" and ")
-  # elsif array.length == 3
-  #   first_two = array.take(2)
-  #   first_two = first_two.join(", ")
-  #   first_two << ", and " << array[2]
-  elsif array.length >= 3
-    except_last = array[0..-2]
-    except_last = except_last.join(", ")
-    except_last << ", and " << array[-1]
+  case array.length
+  when 1
+    return array[0]
+  when 2
+    return array[0..1].join(" and ")
   else
-    array.join
+    return array[0..-2].join(", ") <<", and #{array[-1]}"
   end
 end
+
+print oxford_comma(["kiwi"])
+print oxford_comma(["kiwi", "apple"])
+print oxford_comma(["kiwi", "apple", "orange", "pineapple", "grapes"])
