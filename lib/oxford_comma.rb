@@ -1,3 +1,5 @@
 def oxford_comma(array)
-  array.split(",")
+  case array
+    when = 1
+      return array
 end
