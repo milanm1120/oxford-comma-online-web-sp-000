@@ -1,5 +1,5 @@
 def oxford_comma(array)
   case array
   when array == 1
-      return array
+    return array
 end
