@@ -11,3 +11,4 @@ end
 
 print oxford_comma(["kiwi"])
 print oxford_comma(["kiwi", "apple"])
+print oxford_comma(["kiwi", "apple", "orange", "pineapple", "grapes"])
