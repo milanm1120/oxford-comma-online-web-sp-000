@@ -1,6 +1,6 @@
 def oxford_comma(array)
   case array.split
-  when
+  when == 1
     return array
   end
 end
